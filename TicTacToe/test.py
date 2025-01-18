@@ -74,8 +74,8 @@ def tic_tac_toe():
 
         player = "O" if player == "X" else "X"
 
-    replay = input("Do you want to play again? (yes/no): ").lower()
-    if replay == "yes":
+    replay = input("Do you want to play again? (y/n): ").lower()
+    if replay == "y":
         table = [[" " for _ in range(3)] for _ in range(3)]
         tic_tac_toe()
     else:
