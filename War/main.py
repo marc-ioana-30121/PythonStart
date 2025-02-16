@@ -50,6 +50,36 @@ class Player:
     def __str__(self):
         return f'Player {self.name} has {len(self.all_cards)} cards.'
     
+#Game setup
 
+player_one = Player("one")
+player_two = Player("two")
 
+new_deck = Deck()
+new_deck.shuffle()
 
+for x in range(26):
+    player_one.add_cards(new_deck.deal_one())
+    player_two.add_cards(new_deck.deal_one())
+
+#print(player_one.all_cards[0])
+game_on = True
+round_num = 0
+
+while game_on:
+    round_num += 1 
+    print(f"Round {round_num}")
+    if len(player_one.all_cards) == 0:
+        print('Player One, out of cars! Plaer Two wins!')
+        game_on = False
+        break
+    if len(player_two.all_cards) == 0:
+        print('Player Two, out of cars! Plaer One wins!')
+        game_on = False
+        break
+    #Start a new round
+    player_one_cards = []
+    player_one_cards.append(player_one.remove_one())
+    
+    player_two_cards = []
+    player_two_cards.append(player_two.remove_one())
