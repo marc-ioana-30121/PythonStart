@@ -6,7 +6,13 @@ This repository contains a collection of beginner-friendly Python projects that 
 Each project focuses on a specific concept or problem, helping me explore Python's powerful features and build a strong foundation in coding.
 
 ## Projects Included:
--> Tic-Tac-Toe Game: A simple implementation of the classic game
+-> Tic-Tac-Toe Game with Docker support: A simple implementation of the classic game.
+
+-> War: Python implementation with OOP design, of the classic card game "War", where two players compete by drawing cards from their decks. 
+
+-> simple shell (command-line interpreter).
+
+-> OOP basic: Bank Account system implemented using Object-Oriented Programming.
 
 
 ## Goals
